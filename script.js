@@ -1,7 +1,40 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
 
-console.log("As we live in a state of natural disaster, it is crucial to have you , your family, and your home prepared for hurricane season.  By starting early, you will have a head start stocking up essential items for your home.  It is better to over prepare for a hurricane than to wait until the last minute.  Make your preparation easier by downloading this checklist in ordeer to keep yourself safe during the storm!" 
-            <br><br>"How to prepare for a hurricane?"
-            "Hurricane Essentials" <br><br>
-            ");
+let counter = 1;
+
+const goForward = () => {
+  if (counter < 3) {
+    counter++;
+    let idToMatch = "#slide-" + counter;
+    document.querySelector(idToMatch).classList.remove("hidden");
+  }
+};
+
+const goBack = () => {
+  if (counter > 1) {
+    let idToMatch = "#slide-" + counter;
+    document.querySelector(idToMatch).classList.add("hidden");
+    counter--;
+  }
+};
+
+const downloadPNG = () => {
+  let containerToSave = document.querySelector("#checklist");
+  
+  html2canvas(containerToSave, {}).then(
+    (canvas) => {
+      let a = document.createElement("a");
+      a.download = "checklist.png";
+      a.href = canvas.toDataURL("image/png");
+      a.click();
+    }
+  )
+};
+
+const openChecklist = () => {
+  let checklist = document.querySelector("#checklist");
+  checklist.classList.remove("noheight");
+  checklist.classList.add("fullheight");
+}
+
