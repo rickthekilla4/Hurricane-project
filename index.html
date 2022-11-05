@@ -5,16 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Hello world!</title>
-
+    <!-- import Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    
+    <!-- import html2canvas website -->
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js" defer></script>
+    
     <!-- import the webpage's stylesheet -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="/style.css" />
     
-    <script src="/script.js" defer></script>
-  </head>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
+  </head> 
   <body>
     <!-- this is the start of content -->
-    <h1>Hello World!</h1>
-    <p>Wow, this is where my content will go!</p>
+
+     <body>
+     <h1> <p style="background-color:red">HURRICANE CHECKLIST</p> </h1>
+   </body>
+    <div class="container">
+      <i class="bi bi-caret-left-fill left" onclick="goBack()"></i>
+      <i class="bi bi-caret-right-fill right" onclick="goForward()"></i>
+
+      <section class="full-screen" id="slide-1">
+        <button onclick="openChecklist()">
+        Open Checklist
+      </button>
+      <p>
+        Have you ever wondered how to prepare for a hurricane?  Here's a list of things you can do to be prepared for a hurricane!
+        </p>
+      <h2>
+  <center>  <a href="default.asp">
+    </a></center> </h2>
+
+          
+     <h3>Have you prepared for the worst? Here's a helpful checklist to keep you prepared.</h3> 
+  <a href="default.asp">
+    </a>
+    <body>
+      
+      <section class="full-screen hidden" id="slide-2">
+        <button onclick="openChecklist()">
+          Open Checklist
+        </button>
+        <p>Make a plan 
+
+        <ul style=“list-style-type:square”>
+
+<li>Gather emergency supplies</li>
+
+<li>Know the difference between a hurricane “watch” and “warning”</li>
+
+<li>Get your car ready </li>
+          
+<li>Get your family and pets ready </li>
+          
+<li>Get your home ready </li>
+
+</ul></p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-3">
+         <button onclick="openChecklist()">
+          Open Checklist
+        </button>
+        <p>As we live in a state of natural disaster, it is crucial to have you, your family and your home prepared for hurricane season. By starting early, you will have a head start stocking up essential items for your home. It is better to over prepare than leaving it for the last minute. Make your preparation easier by downloading this checklist in order to keep yourself safe during the storm!</p>
+      </section>
+      
+      <section id="checklist" class="noheight">
+        <h3>
+           What you need!
+        </h3> 
+        <div>
+          <input type="checkbox" name="check1">
+          <label for="check1">Water</label>      
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check2">
+          <label for="check2">Food</label>
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check3">
+          <label for="check3">Flashlight and extra batteries</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check4">
+          <label for="check4">First aid kit</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check5">
+          <label for="check5">Whistle</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check6">
+          <label for="check6">Dust Mask</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check7">
+          <label for="check7">Plastic sheeting and duct tape for sheltering in place</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check8">
+          <label for="check8">Flood and Homeowner's Insurance Policies</label>   
+        </div>
+        
+        <div>
+          <input type="checkbox" name="check8">
+          <label for="check8">Pictures of property before hurricane</label>   
+        </div>
+
+        <button class="download-button" onclick="downloadPNG()">
+      Download a PNG of your Checklist
+    </button>
+        
+      </section>
+    </body>    </div>
   </body>
+  <fn> </fn>
 </html>

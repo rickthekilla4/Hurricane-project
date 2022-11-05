@@ -3,22 +3,132 @@
 /* default to border-box */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 /* adjust typography defaults */
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
 
+body {
+  margin: 1rem;
+  font-family: serif, monospace;
+  line-height: 1.5;
+  width: 2.0;
+  background-color: #fcf300;
+}
 /* images and videos max out at full width */
 img,
 video {
   height: auto;
   max-width: 100%;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+}
+
+.container i {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}
+
+.container i:hover {
+  color: #fcf300;
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  top: -30px;
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.full-screen {
+  height: 40vh;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-screen p {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#slide-1 {
+  background: #d1dede;
+  height: 50vh;
+}
+
+#slide-2 {
+  background: #c58882;
+   height: 50vh;
+}
+
+#slide-3 {
+  background: #ead2ac;
+   height: 50vh;
+}
+
+.checkbox-spin:checked + label span:after {
+  transform: rotateZ(180deg);
+  background: #FF4040;
+}
+
+#checklist {
+  position: absolute;
+  top: 60vh;
+  background: red;
+  width: 100%;
+  padding: 15px;
+  transition: all 2s;
+  text-align: left;
+  
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  background: blue;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.noheight {
+  height: 0;
+  visibility: hidden;
+}
+
+.fullheight {
+  height: 60vh;
+  visibility: visible;
 }
