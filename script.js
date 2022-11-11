@@ -4,7 +4,7 @@
 let counter = 1;
 
 const goForward = () => {
-  if (counter < 3) {
+  if (counter < 4) {
     counter++;
     let idToMatch = "#slide-" + counter;
     document.querySelector(idToMatch).classList.remove("hidden");
