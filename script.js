@@ -37,4 +37,3 @@ const openChecklist = () => {
   checklist.classList.remove("noheight");
   checklist.classList.add("fullheight");
 }
-
