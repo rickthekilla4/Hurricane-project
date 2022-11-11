@@ -97,6 +97,10 @@ h1 {
    height: 50vh;
 }
 
+#slide-4 {
+  background: brown;
+   height: 50vh;
+}
 .checkbox-spin:checked + label span:after {
   transform: rotateZ(180deg);
   background: #FF4040;
@@ -132,3 +136,4 @@ button {
   height: 60vh;
   visibility: visible;
 }
+
